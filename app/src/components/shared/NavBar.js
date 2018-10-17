@@ -6,7 +6,7 @@
 
 // Trace has edit this 2
 
-
+var test = 1;
 
 // Trace has edit this 3
 
