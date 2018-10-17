@@ -1,4 +1,4 @@
-**Setting up git**
+#Setting up git
 
 **Step 1:** Fork Summit-App to GitHub Account
 
@@ -45,7 +45,7 @@ Let me explain what you how have set up:
 
 So, we have our SummitApp/Summit-App repo that has a master and a develop branch, and in step 1 you forked this repo to your GitHub account. This makes a copy of the repo for you in your account. In step 2 we cloned our fork to our local computer, which allows you to get/add anything found in the fork on your computer with pull/push. The last, and most confusing aspect is step 3, this is where we configure our local repo to pull from our SummitApp/Summit-App repo – which we will refer to as &quot;upstream&quot;. This is because while you are working on a specific feature on your local fork, somebody else might have added code to the &quot;upstream develop&quot; branch (this is where we will have all of our development code that people have decided to be finished). You might be asking yourself &quot;why do this?&quot;. The answer to this is simple: we don&#39;t want one specific person to be able to break our upstream develop branch, which will be our &quot;stable&quot; codebase. This does make you have to do extra steps when trying to get your code from upstream develop. Now I will go through how to actually use this setup to develop code for specific features, push code to your fork and also get your feature code into the develop branch.
 
-**Using Git**
+#Using Git
 
 These will be the steps you do when getting information to/from the develop branch and your fork. When in doubt about anything, ping Trace/Andrew and we will see what we can help with. Oftentimes "git status" will give you information on what you need to do! NEVER push straight to our develop branch. If you want to get your code into develop, submita PR. 
 
@@ -72,9 +72,10 @@ These will be the steps you do when getting information to/from the develop bran
 2. Click "New Pull Request" button (its in the same line as "Clone" green button)
 3. Check over the code to make sure it is what you want in develop
 4. Click "Create Pull Request"
-5. Comment on what the code you worked on does. THESE COMMENT SHOULD BE IN DEPTH AND ARE VERY IMPORTANT
-6. Add at least one reviewer
-7. Assign yourself to this PR
+5. Make sure to "Squash" your commit (can't remember where this option is hoenstly)
+6. Comment on what the code you worked on does. THESE COMMENT SHOULD BE IN DEPTH AND ARE VERY IMPORTANT
+7. Add at least one reviewer
+8. Assign yourself to this PR
 
 **Accepting/Rejecting/Commenting a PR**
 1. Look over the PR
@@ -89,6 +90,7 @@ These will be the steps you do when getting information to/from the develop bran
     - When ready to merge all you need to do is:
     - Make sure the PR can be automatically merged (if it isn't talk with Trace/Andrew)
     - Make sure the green button says "Create a Merge Commit"
+
 
 
 **Updating a PR**
