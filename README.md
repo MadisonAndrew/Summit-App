@@ -72,10 +72,9 @@ These will be the steps you do when getting information to/from the develop bran
 2. Click "New Pull Request" button (its in the same line as "Clone" green button)
 3. Check over the code to make sure it is what you want in develop
 4. Click "Create Pull Request"
-5. Make sure to "Squash" your commit (can't remember where this option is hoenstly)
-6. Comment on what the code you worked on does. THESE COMMENT SHOULD BE IN DEPTH AND ARE VERY IMPORTANT
-7. Add at least one reviewer
-8. Assign yourself to this PR
+5. Comment on what the code you worked on does. THESE COMMENT SHOULD BE IN DEPTH AND ARE VERY IMPORTANT
+6. Add at least one reviewer
+7. Assign yourself to this PR
 
 **Accepting/Rejecting/Commenting a PR**
 1. Look over the PR
@@ -89,7 +88,7 @@ These will be the steps you do when getting information to/from the develop bran
     - WHEN IN DOUBT ABOUT THE FOLLOWING STEPS - ask Trace/Andrew for help to reduce merging problems. We will be happy to help out :) 
     - When ready to merge all you need to do is:
     - Make sure the PR can be automatically merged (if it isn't talk with Trace/Andrew)
-    - Make sure the green button says "Squash and Merge PR"
+    - Make sure the green button says "Create a Merge Commit"
 
 
 **Updating a PR**
