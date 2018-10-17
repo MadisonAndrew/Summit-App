@@ -93,7 +93,6 @@ These will be the steps you do when getting information to/from the develop bran
 
 
 **Updating a PR**
-
 Lets say you made a PR and someone said you need to change something on it. What do you do?
 1. pull from upstream develop
 2. resolve conflicts (if any)
