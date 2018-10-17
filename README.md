@@ -1,4 +1,4 @@
-**Setting up git**
+#Setting up git
 
 **Step 1:** Fork Summit-App to GitHub Account
 
