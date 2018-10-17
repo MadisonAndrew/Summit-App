@@ -59,8 +59,10 @@ Do not work on the same feature that others are working on, this will cause merg
 5. [Repeat till ready for PR]
 
 **Pull**
-1. git pull upstream develop
+1. git pull upstream develop --rebase
     - Pulls from the upstream develop in Summit-App/Summit-App
+    - And rebases your commits since we are squashing commits
+    - DON'T FORGET --rebase!!!!!!!!!!!!
 2. git pull
     - Pulls from your fork
 
@@ -91,7 +93,7 @@ Do not work on the same feature that others are working on, this will cause merg
     - WHEN IN DOUBT ABOUT THE FOLLOWING STEPS - ask Trace/Andrew for help to reduce merging problems. We will be happy to help out :) 
     - When ready to merge all you need to do is:
     - Make sure the PR can be automatically merged (if it isn't talk with Trace/Andrew)
-    - Make sure the green button says "Squash and Merge"
+    - Make sure the green button says "Squash and Merge" instead of "Merge pull request" (this makes all of your commits to your fork only 1 commit, which will help us track changes easier)
 
 
 
