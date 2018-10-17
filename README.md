@@ -59,8 +59,10 @@ Do not work on the same feature that others are working on, this will cause merg
 5. [Repeat till ready for PR]
 
 **Pull**
-1. git pull upstream develop
+1. git pull upstream develop --rebase
     - Pulls from the upstream develop in Summit-App/Summit-App
+    - And rebases your commits since we are squashing commits
+    - DON'T FORGET --rebase!!!!!!!!!!!!
 2. git pull
     - Pulls from your fork
 
