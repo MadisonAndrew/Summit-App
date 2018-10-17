@@ -100,3 +100,10 @@ Lets say you made a PR and someone said you need to change something on it. What
 2. resolve conflicts (if any)
 3. make required changed from PR comments
 4. push to your fork (this will automatically update your PR! Cool right!?!?)
+
+**Starting React App**
+1. Go into PATH/Summit-App/app
+2. (make sure you have npm/nodeJS installed by downloading here: https://nodejs.org/en/)
+3.  &quot;npm install&quot; to install all requirements for our project
+4. Run &quot;npm start&quot;
+5. A node server should spin up and a web browser should open up with a web page that has the React logo spinning in it! SUCCESS!
