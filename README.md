@@ -12,7 +12,7 @@
 
 1. Click &quot;Clone or download&quot; and copy the URL
 2. Open Terminal and cd to where you want to have the repo on your computer
-3. Type: git clone <URL>
+3. Type: git clone URL
 4. cd to the Summit-App repo
 
 **Step 3:** Configure local fork with upstream develop
@@ -22,18 +22,24 @@
 3. Copy the URL to your clipboard
 4. Go back to terminal (make sure you are in your repo)
     - To confirm you&#39;re in your local repo type: pwd
-    - Expected Result: <PATH>/Summit-App
+    - Expected Result: PATH/Summit-App
 5. Type: git remote -v
     - Expected result:
+    
     origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (fetch)
+
     origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (push)
 6. Type: git remote add upstream <URL\_FROM\_STEP\_2\>
 7. Type: get remove -v
     - Expected result:
-origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (fetch)
-origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (push)
-upstream         [https://github.com/SummitApp/Summit-App.git](https://github.com/SummitApp/Summit-App.git) (fetch)
-upstream         [https://github.com/SummitApp/Summit-App.git](https://github.com/SummitApp/Summit-App.git) (push)
+
+    origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (fetch)
+
+    origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (push)
+
+    upstream         [https://github.com/SummitApp/Summit-App.git](https://github.com/SummitApp/Summit-App.git) (fetch)
+
+    upstream         [https://github.com/SummitApp/Summit-App.git](https://github.com/SummitApp/Summit-App.git) (push)
 
 Let me explain what you how have set up:
 
@@ -57,17 +63,17 @@ These will be the steps you do when getting information to/from the develop bran
     - Pulls from your fork
 
 **Push to Fork**
-1. git add <whatever you want to add>
-2. git commit -m "<MSG>"
+1. git add WHATEVER
+2. git commit -m MSG
 3. git push
 
 **Push to branch**
-1. Go to your github fork online (<GIT USERNAME>/Summit-App)
+1. Go to your github fork online (GIT_USERNAME/Summit-App)
 2. Click "New Pull Request" button (its in the same line as "Clone" green button)
 3. Check over the code to make sure it is what you want in develop
 4. Click "Create Pull Request"
 5. Comment on what the code you worked on does. THESE COMMENT SHOULD BE IN DEPTH AND ARE VERY IMPORTANT
-6. Add at least one reviewer 
+6. Add at least one reviewer
 7. Assign yourself to this PR
 
 **Accepting PR**
