@@ -77,7 +77,23 @@ These will be the steps you do when getting information to/from the develop bran
 7. Add at least one reviewer
 8. Assign yourself to this PR
 
-**Accepting PR**
+**Accepting/Rejecting/Commenting a PR**
 1. Look over the PR
 2. If code doesn't look good, commets are missing, or the code doesn't have features it supposed to have comment on the respective code
-3. Once you feel the code is ready, submit your code review
+    - To comment on specific code, go to the "Files Changed" tab
+    - Hover on the left of their code (by the numbers) and click the "+"
+    - Enter your comment here:
+    - Click "Start Review" (this will add things to a stack if you have multiple comments to make) otherwise click "Add single comment"
+    - When done click the "Review Changes" button (its green) and select Comment/Approve/Request Changes depending on if the PR should be accepted/edited. (The person who made a PR will get notification of once you do this)
+    - (REPEAT TILL READY TO MERGE)
+    - When ready to merge all you need to do is:
+    - Make sure the PR can be automatically merged (if it isn't talk with Trace/Andrew)
+    - Make sure the green button says "Squash and Merge PR"
+
+
+**Updating a PR**
+Lets say you made a PR and someone said you need to change something on it. What do you do?
+1. pull from upstream develop
+2. resolve conflicts (if any)
+3. make required changed from PR comments
+4. push to your fork (this will automatically update your PR! Cool right!?!?)
