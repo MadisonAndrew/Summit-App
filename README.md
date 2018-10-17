@@ -88,7 +88,7 @@ These will be the steps you do when getting information to/from the develop bran
     - (REPEAT TILL READY TO MERGE)
     - When ready to merge all you need to do is:
     - Make sure the PR can be automatically merged (if it isn't talk with Trace/Andrew)
-    - Make sure the green button says "Squash and Merge PR"
+    - Make sure the green button says "Squash and Merge" instead of "Create a Merge Commit" or "Rebase and Merge"
 
 
 **Updating a PR**
