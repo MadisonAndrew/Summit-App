@@ -30,7 +30,7 @@
 
     origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (push)
 6. Type: git remote add upstream <URL\_FROM\_STEP\_2\>
-7. Type: get remove -v
+7. Type: get remote -v
     - Expected result:
 
     origin  [https://github.com/\&lt;USERNAME\&gt;/Summit-App.git](https://github.com/%3cUSERNAME%3e/Summit-App.git) (fetch)
