@@ -41,4 +41,36 @@ So, we have our SummitApp/Summit-App repo that has a master and a develop branch
 
 **Using Git**
 
-Let&#39;s say I want to create a feature called &quot;sample-feature&quot;, these will be the following operations that you will do to both set up the feature, but also do continuous development on said feature.
+These will be the steps you do when getting information to/from the develop branch and your fork.
+
+**General Flow**
+1. Push any changes on your local repo to your fork
+2. Pull from upstream develop
+3. Resolve any merge conflicts
+4. Push local repo to your fork
+5. [Repeat till ready for PR]
+
+**Pull**
+1. git pull upstream develop
+    - Pulls from the upstream develop in Summit-App/Summit-App
+2. git pull
+    - Pulls from your fork
+
+**Push to Fork**
+1. git add <whatever you want to add>
+2. git commit -m "<MSG>"
+3. git push
+
+**Push to branch**
+1. Go to your github fork online (<GIT USERNAME>/Summit-App)
+2. Click "New Pull Request" button (its in the same line as "Clone" green button)
+3. Check over the code to make sure it is what you want in develop
+4. Click "Create Pull Request"
+5. Comment on what the code you worked on does. THESE COMMENT SHOULD BE IN DEPTH AND ARE VERY IMPORTANT
+6. Add at least one reviewer 
+7. Assign yourself to this PR
+
+**Accepting PR**
+1. Look over the PR
+2. If code doesn't look good, commets are missing, or the code doesn't have features it supposed to have comment on the respective code
+3. Once you feel the code is ready, submit your code review
