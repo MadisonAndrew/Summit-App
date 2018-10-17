@@ -49,6 +49,8 @@ So, we have our SummitApp/Summit-App repo that has a master and a develop branch
 
 These will be the steps you do when getting information to/from the develop branch and your fork. When in doubt about anything, ping Trace/Andrew and we will see what we can help with. Oftentimes "git status" will give you information on what you need to do! NEVER push straight to our develop branch. If you want to get your code into develop, submita PR. 
 
+Do not work on the same feature that others are working on, this will cause merging problems that I'm not very good at resolving. If you have an issue ask Andrew.
+
 **General Flow**
 1. Push any changes on your local repo to your fork
 2. Pull from upstream develop
@@ -89,7 +91,7 @@ These will be the steps you do when getting information to/from the develop bran
     - WHEN IN DOUBT ABOUT THE FOLLOWING STEPS - ask Trace/Andrew for help to reduce merging problems. We will be happy to help out :) 
     - When ready to merge all you need to do is:
     - Make sure the PR can be automatically merged (if it isn't talk with Trace/Andrew)
-    - Make sure the green button says "Create a Merge Commit"
+    - Make sure the green button says "Squash and Merge"
 
 
 
