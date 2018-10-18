@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class NavBar extends Component {
+class ClientLoginContainer extends Component {
     render() {
         return(
             <div>
-                <h1>NavBar Baby</h1>
+                <h2>Client Login</h2>
             </div>
         )
     }
 }
 
-export default NavBar;
+export default ClientLoginContainer;

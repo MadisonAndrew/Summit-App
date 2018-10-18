@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
-import { Route, Switch } from "react-router-dom";
-import MainMenu from './components/MainMenu/MainMenuContainer.js';
-import NavBar from './components/NavBar/NavBar.js';
-import GymInformation from './components/GymInformation/GymInformationContainer.js';
+import { Route, Switch, Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 import './App.css';
 
-const Header = () => (
-  <div>
-    <NavBar />
-  </div>
-)
-
-const Body = () => (
-  <div>
-    <Switch>
-      <Route exact path='/MainMenu' component={MainMenu}/>
-      <Route path='/GymInformation' component={GymInformation}/>
-    </Switch>
-  </div>
-)
+import MainMenu from './components/MainMenu/MainMenuContainer.js';
+import GymInformation from './components/GymInformation/GymInformationContainer.js';
+import ClientCheckIn from './components/ClientCheckIn/ClientCheckInContainer.js';
+import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.js';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <Body />
+        <div>
+          <Link to='/Home'>
+            <Button bsStyle="primary" >
+                Home
+            </Button>
+          </Link>
+        </div>
+        <div>
+          <Switch>
+            <Route exact path='/' component={MainMenu}/>
+            <Route exact path='/Home' component={MainMenu}/>
+            <Route path='/GymInformation' component={GymInformation}/>
+            <Route path='/CheckIn' component={ClientCheckIn}/>
+            <Route path='/Login' component={ClientLoginContainer}/>
+          </Switch>
+        </div>
       </div>
     );
   }
