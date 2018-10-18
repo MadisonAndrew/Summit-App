@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, Switch } from "react-router-dom";
+import MainMenu from './components/MainMenu/MainMenuContainer.js';
+import NavBar from './components/NavBar/NavBar.js';
+import GymInformation from './components/GymInformation/GymInformationContainer.js';
 import './App.css';
+
+const Header = () => (
+  <div>
+    <NavBar />
+  </div>
+)
+
+const Body = () => (
+  <div>
+    <Switch>
+      <Route exact path='/MainMenu' component={MainMenu}/>
+      <Route path='/GymInformation' component={GymInformation}/>
+    </Switch>
+  </div>
+)
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Header />
+        <Body />
       </div>
     );
   }

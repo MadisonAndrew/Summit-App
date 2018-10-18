@@ -1,3 +1,13 @@
-// This will be a component with all of the js code
+import React, { Component } from 'react';
 
-// Notice that the folder this is in has camel case and so does this file!
+class NavBar extends Component {
+    render() {
+        return(
+            <div>
+                <h1>NavBar Baby</h1>
+            </div>
+        )
+    }
+}
+
+export default NavBar;
