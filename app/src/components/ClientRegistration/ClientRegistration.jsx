@@ -35,3 +35,5 @@ class ClientRegistration extends Component {
       );
     }
   }
+
+  export default ClientRegistration;
