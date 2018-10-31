@@ -1,25 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, Switch, Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+
 import './App.css';
+import 'react-bootstrap-typeahead/css/Typeahead.css';
+
+import MainMenu from './components/MainMenu/MainMenuContainer.jsx';
+import GymInformation from './components/GymInformation/GymInformationContainer.jsx';
+import ClientCheckIn from './components/ClientCheckIn/ClientCheckIn.jsx';
+import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.jsx';
+import ClientAccount from './components/ClientAccount/ClientAccountContainer.jsx';
+
+const Header = () => (
+  <div>
+    <span>
+      <Link to='/Home'>
+        <Button bsStyle="primary">
+            Home
+        </Button>
+      </Link>
+    </span>
+    <hr/>
+  </div>
+)
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={MainMenu}/>
+          <Route exact path='/Home' component={MainMenu}/>
+          <Route path='/GymInformation' component={GymInformation}/>
+          <Route path='/CheckIn' component={ClientCheckIn}/>
+          <Route path='/Login' component={ClientLoginContainer}/>
+          <Route path='/ClientAccount' component={ClientAccount}/>
+        </Switch>
       </div>
     );
   }

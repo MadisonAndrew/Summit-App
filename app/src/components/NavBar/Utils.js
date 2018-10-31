@@ -1,1 +1,0 @@
-// Utilities for this navbar component
