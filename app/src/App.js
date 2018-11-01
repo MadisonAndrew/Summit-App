@@ -10,6 +10,7 @@ import GymInformation from './components/GymInformation/GymInformationContainer.
 import ClientCheckIn from './components/ClientCheckIn/ClientCheckIn.jsx';
 import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.jsx';
 import ClientAccount from './components/ClientAccount/ClientAccountContainer.jsx';
+import NewClientFormRedirect from './components/newClientFormRedirect/newClientFormRedirectContainer.jsx';
 import ClientRegistration from './components/ClientRegistration/ClientRegistration.jsx';
 
 const Header = () => (
@@ -37,8 +38,9 @@ class App extends Component {
           <Route path='/CheckIn' component={ClientCheckIn}/>
           <Route path='/Login' component={ClientLoginContainer}/>
           <Route path='/ClientAccount' component={ClientAccount}/>
+          <Route path='/NewClientFormRedirect' component={newClientFormRedirect}/>
 	        <Route path='/ClientRegistration' component={ClientRegistration}/>
-	</Switch>
+        </Switch>
       </div>
     );
   }
