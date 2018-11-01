@@ -38,7 +38,7 @@ class App extends Component {
           <Route path='/CheckIn' component={ClientCheckIn}/>
           <Route path='/Login' component={ClientLoginContainer}/>
           <Route path='/ClientAccount' component={ClientAccount}/>
-          <Route path='/NewClientFormRedirect' component={newClientFormRedirect}/>
+          <Route path='/NewClientFormRedirect' component={NewClientFormRedirect}/>
 	        <Route path='/ClientRegistration' component={ClientRegistration}/>
         </Switch>
       </div>
