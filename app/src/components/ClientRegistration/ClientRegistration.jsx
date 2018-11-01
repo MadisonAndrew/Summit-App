@@ -18,17 +18,26 @@ class ClientRegistration extends Component {
     }
   
     handleSubmit (event) {
-        event.preventDefault();
-        console.log(this.state);
+        alert('here')
+        event.preventDefault()
+        console.log(this.state)
+        this.setState({
+            firstName: '',
+            lastName: '',
+            dateOfBirth: ''
+        })
     }
   
     render() {
       return (
         <div className="ClientRegistration">
             <form onSubmit={this.handleSubmit}>
-                <input name = "firstName" type="text" value={this.state.firstName} onChange={this.handleChange}/>
-                <input name = "lastName" type="text" value={this.state.lastName} onChange={this.handleChange}/>
-                <input name = "dateOfBirth" type="text" value={this.state.dateOfBirth} onChange={this.handleChange}/>
+                First Name:    <input name = "firstName" type="text" value={this.state.firstName} onChange={this.handleChange}/>
+                <br/>
+                Last Name:     <input name = "lastName" type="text" value={this.state.lastName} onChange={this.handleChange}/>
+                <br/>
+                Date of Birth: <input name = "dateOfBirth" type="date" value={this.state.dateOfBirth} onChange={this.handleChange}/>
+                <br/>
                 <input type="submit" value="Submit"/>
             </form>
         </div>

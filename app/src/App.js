@@ -37,7 +37,7 @@ class App extends Component {
           <Route path='/CheckIn' component={ClientCheckIn}/>
           <Route path='/Login' component={ClientLoginContainer}/>
           <Route path='/ClientAccount' component={ClientAccount}/>
-	  <Route path-'/ClientRegistration' component{ClientRegistration}/>
+	        <Route path='/ClientRegistration' component={ClientRegistration}/>
 	</Switch>
       </div>
     );
