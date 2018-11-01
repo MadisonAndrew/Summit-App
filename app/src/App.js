@@ -10,6 +10,7 @@ import GymInformation from './components/GymInformation/GymInformationContainer.
 import ClientCheckIn from './components/ClientCheckIn/ClientCheckIn.jsx';
 import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.jsx';
 import ClientAccount from './components/ClientAccount/ClientAccountContainer.jsx';
+import newClientFormRedirect from './components/newClientFormRedirect/newClientFormRedirectContainer.jsx';
 
 const Header = () => (
   <div>
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path='/CheckIn' component={ClientCheckIn}/>
           <Route path='/Login' component={ClientLoginContainer}/>
           <Route path='/ClientAccount' component={ClientAccount}/>
+          <Route path='/newClientFormRedirect' component={newClientFormRedirect}/>
         </Switch>
       </div>
     );
