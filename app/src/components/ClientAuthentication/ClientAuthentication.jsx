@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import ClientListTypeahead from '../Shared/ClientListTypeahead.jsx';
 import DOB from '../Shared/DobInput.jsx';
+import authUser from '../ClientAuthentication/ClientAuthenticationVirtualController.jsx'
 class ClientAuthentication extends Component {
     constructor(props) {
         super(props)
@@ -38,9 +39,9 @@ class ClientAuthentication extends Component {
         let payload = {
             name : this.state.nameSelected,
             dob  : this.state.dob,
-            authenticated : true
+            authenticated : false
         }
-        this.props.onAuthentication(payload);
+        authUser(payload, this.props.onAuthentication);
     }
 
     render() {

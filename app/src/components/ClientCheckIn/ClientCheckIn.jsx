@@ -14,13 +14,13 @@ class ClientCheckIn extends Component {
     }
 
     onAuthentication(payload) {
-        console.log(payload)
         if(payload.authenticated) {
             this.setState({ 
                 clientName: payload.name,
                 showContinueQuestion: true
             })
         }
+        console.log(payload)
     }
 
     render() {
