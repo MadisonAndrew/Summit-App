@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import ClientAuthentication from '../ClientAuthentication/ClientAuthentication.jsx';
 import ContinueToAccountQuestion from '../ClientAuthentication/ContinueToAccount.jsx';
+import { getClients } from './ClientCheckInVirtualController';
 
 class ClientCheckIn extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            clients: ["Trace Carrasco", "John Doe", "Andrew Pelto", "Sally Jane"],
+            clients: null,
             clientName: "",
             showContinueQuestion: false,
         }
         this.onAuthentication = this.onAuthentication.bind(this);
+        this.setNewClients = this.setNewClients.bind(this);
     }
 
     onAuthentication(payload) {
@@ -18,9 +20,19 @@ class ClientCheckIn extends Component {
             this.setState({ 
                 clientName: payload.name,
                 showContinueQuestion: true
-            })
+            });
         }
-        console.log(payload)
+        console.log(payload);
+    }
+
+    setNewClients(newClients) {
+        this.setState({
+            clients: newClients,
+        });
+    }
+
+    componentDidMount() {
+        getClients(this.setNewClients);
     }
 
     render() {

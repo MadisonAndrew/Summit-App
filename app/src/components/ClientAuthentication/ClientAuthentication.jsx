@@ -47,7 +47,9 @@ class ClientAuthentication extends Component {
     render() {
         return(
             <div>
-                <h2>Enter Your Name:</h2>
+                {this.props.clients != null &&
+                    <h2>Enter Your Name:</h2>
+                }
                 <ClientListTypeahead clientList={this.props.clients} onSelect={this.handleClientSelection}/>
                 {
                     this.state.hasSelected
