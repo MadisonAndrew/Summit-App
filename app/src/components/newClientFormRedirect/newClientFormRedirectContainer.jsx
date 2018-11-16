@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class newClientFormRedirectContainer extends Component {
+class NewClientFormRedirectContainer extends Component {
     render() {
         return(
           window.location = "JotForm://examplePath"
@@ -8,4 +8,4 @@ class newClientFormRedirectContainer extends Component {
     }
 }
 
-export default newClientFormRedirectContainer;
+export default NewClientFormRedirectContainer;
