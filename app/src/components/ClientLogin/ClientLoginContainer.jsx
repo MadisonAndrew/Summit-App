@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ClientAuthenticator from '../ClientAuthentication/ClientAuthentication.jsx';
 
 class ClientLoginContainer extends Component {
     render() {
         return(
             <div>
-                <h2>Client Login</h2>
+                <ClientAuthenticator onAuthentication={() => {this.props.history.push('/ClientAccount')}}/>
             </div>
         )
     }
