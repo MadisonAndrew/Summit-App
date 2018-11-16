@@ -12,6 +12,9 @@ import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.
 import ClientAccount from './components/ClientAccount/ClientAccountContainer.jsx';
 import NewClientFormRedirect from './components/newClientFormRedirect/newClientFormRedirectContainer.jsx';
 import ClientRegistration from './components/ClientRegistration/ClientRegistration.jsx';
+import EmployeePage from './components/EmployeePage/EmployeePageContainer.jsx';
+import AlertManagement from './components/AlertManagement/AlertManagementContainer.jsx';
+import CreateAlert from './components/CreateAlert/CreateAlertContainer.jsx';
 
 const Header = () => (
   <div>
@@ -40,6 +43,9 @@ class App extends Component {
           <Route path='/ClientAccount' component={ClientAccount}/>
           <Route path='/NewClientFormRedirect' component={NewClientFormRedirect}/>
 	        <Route path='/ClientRegistration' component={ClientRegistration}/>
+          <Route path='/EmployeePage' component={EmployeePage}/>
+          <Route path='/AlertManagement' component={AlertManagement}/>
+          <Route path='/CreateAlert' component={CreateAlert}/>
         </Switch>
       </div>
     );

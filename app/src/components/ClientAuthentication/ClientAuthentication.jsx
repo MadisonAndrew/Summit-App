@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import ClientListTypeahead from '../Shared/ClientListTypeahead.jsx';
 import DOB from '../Shared/DobInput.jsx';
-import authUser from '../ClientAuthentication/ClientAuthenticationVirtualController.jsx'
+import { getClients, authUser } from './ClientAuthenticationVirtualController';
+
+
 class ClientAuthentication extends Component {
     constructor(props) {
         super(props)
@@ -11,12 +13,25 @@ class ClientAuthentication extends Component {
             dob: null,
             dobCompleted: false,
             nameSelected: null,
-            hasSelected: false
+            hasSelected: false,
+            clients: null
         }
         this.handleClientSelection = this.handleClientSelection.bind(this);
         this.handleClientDOB = this.handleClientDOB.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        this.setNewClients = this.setNewClients.bind(this);
     }
+
+    componentDidMount() {
+        getClients(this.setNewClients);
+    }
+
+    setNewClients(newClients) {
+        this.setState({
+            clients: newClients,
+        });
+    }
+    
 
     handleClientSelection(client) {
         this.setState({ 
@@ -47,10 +62,10 @@ class ClientAuthentication extends Component {
     render() {
         return(
             <div>
-                {this.props.clients != null &&
+                {this.state.clients != null &&
                     <h2>Enter Your Name:</h2>
                 }
-                <ClientListTypeahead clientList={this.props.clients} onSelect={this.handleClientSelection}/>
+                <ClientListTypeahead clientList={this.state.clients} onSelect={this.handleClientSelection}/>
                 {
                     this.state.hasSelected
                         ? <DOB onValidDOB={this.handleClientDOB}/>
