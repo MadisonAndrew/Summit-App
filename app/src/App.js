@@ -10,7 +10,7 @@ import GymInformation from './components/GymInformation/GymInformationContainer.
 import ClientCheckIn from './components/ClientCheckIn/ClientCheckIn.jsx';
 import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.jsx';
 import ClientAccount from './components/ClientAccount/ClientAccountContainer.jsx';
-import NewClientFormRedirect from './components/NewClientFormRedirect/NewClientFormRedirectContainer.jsx';
+import NewClientFormRedirect from './components/newClientFormRedirect/newClientFormRedirectContainer.jsx';
 import ClientRegistration from './components/ClientRegistration/ClientRegistration.jsx';
 import EmployeePage from './components/EmployeePage/EmployeePageContainer.jsx';
 import AlertManagement from './components/AlertManagement/AlertManagementContainer.jsx';
