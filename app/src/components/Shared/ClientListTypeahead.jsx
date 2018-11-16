@@ -25,13 +25,15 @@ class ClientListTypeahead extends Component {
     render() {
         return(
             <div>
-                <Typeahead
-                    labelKey="name"
-                    options={this.props.clientList}
-                    placeholder="Enter Name..."
-                    onChange={(selected) => this.handleTypeaheadSelect(selected)}
-                    minLength={3}
-                />
+                {this.props.clientList != null &&
+                    <Typeahead
+                        labelKey="name"
+                        options={this.props.clientList}
+                        placeholder="Enter Name..."
+                        onChange={(selected) => this.handleTypeaheadSelect(selected)}
+                        minLength={3}
+                    />
+                }
             </div>
         )
     }

@@ -6,7 +6,6 @@ class ClientCheckIn extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            clients: ["Trace Carrasco", "John Doe", "Andrew Pelto", "Sally Jane"],
             clientName: "",
             showContinueQuestion: false,
         }
@@ -14,19 +13,18 @@ class ClientCheckIn extends Component {
     }
 
     onAuthentication(payload) {
-        console.log(payload)
         if(payload.authenticated) {
             this.setState({ 
                 clientName: payload.name,
                 showContinueQuestion: true
-            })
+            });
         }
     }
 
     render() {
         return(
             <div>
-                <ClientAuthentication clients={this.state.clients} onAuthentication={this.onAuthentication}/>
+                <ClientAuthentication onAuthentication={this.onAuthentication}/>
                 <ContinueToAccountQuestion showQuestion={this.state.showContinueQuestion} name={this.state.clientName}/>
             </div>
         )

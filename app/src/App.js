@@ -12,7 +12,13 @@ import ClientLoginContainer from './components/ClientLogin/ClientLoginContainer.
 import ClientAccount from './components/ClientAccount/ClientAccountContainer.jsx';
 import NewClientFormRedirect from './components/NewClientFormRedirect/NewClientFormRedirectContainer.jsx';
 import ClientRegistration from './components/ClientRegistration/ClientRegistration.jsx';
+<<<<<<< HEAD
 import MedicalQuestionnaire from './components/MedicalQuestionnaire/MedicalQuestionnaire.jsx'
+=======
+import EmployeePage from './components/EmployeePage/EmployeePageContainer.jsx';
+import AlertManagement from './components/AlertManagement/AlertManagementContainer.jsx';
+import CreateAlert from './components/CreateAlert/CreateAlertContainer.jsx';
+>>>>>>> acf50b972ae014cd167bbb6fbedf9ccf0d1dee1c
 
 const Header = () => (
   <div>
@@ -41,7 +47,13 @@ class App extends Component {
           <Route path='/ClientAccount' component={ClientAccount}/>
           <Route path='/NewClientFormRedirect' component={NewClientFormRedirect}/>
 	        <Route path='/ClientRegistration' component={ClientRegistration}/>
+<<<<<<< HEAD
           <Route path='/MedicalQuestionnaire' component={MedicalQuestionnaire}/>
+=======
+          <Route path='/EmployeePage' component={EmployeePage}/>
+          <Route path='/AlertManagement' component={AlertManagement}/>
+          <Route path='/CreateAlert' component={CreateAlert}/>
+>>>>>>> acf50b972ae014cd167bbb6fbedf9ccf0d1dee1c
         </Switch>
       </div>
     );
