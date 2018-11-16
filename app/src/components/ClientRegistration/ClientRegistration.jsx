@@ -18,7 +18,6 @@ class ClientRegistration extends Component {
     }
   
     handleSubmit (event) {
-        alert('here')
         event.preventDefault()
         console.log(this.state)
         this.setState({
