@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+
+  "jest": {
+     "collectCoverage": true,
+     "coverageReporters": ["json", "html"]
+ }
+
+}

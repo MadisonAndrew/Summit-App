@@ -27,7 +27,7 @@ var printDate = function(date) {
     if(date === null)
         return "";
     // +1 because month is 0 indexed
-    return (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+    return String((date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear());
 }
 
 var verifyName = function(name) {
