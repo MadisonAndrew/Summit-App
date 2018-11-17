@@ -16,7 +16,7 @@ class MainMenu extends Component {
                     <Link to='/Login'>
                         <Button bsStyle="primary">Login</Button>
                     </Link>
-                  <Link to='/ClientRegistration'>
+                    <Link to='/ClientRegistration'>
                         <Button bsStyle="primary">New User</Button>
                     </Link>
                     <Link to='/EmployeePage'>
