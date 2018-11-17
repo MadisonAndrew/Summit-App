@@ -4,6 +4,40 @@ import {Button}  from 'react-bootstrap';
 import DatePicker from 'react-mobile-datepicker';
 import {printDate, verifyName} from '../Shared/Utils.js'
 
+
+const monthMap = {
+    '1': 'Jan',
+    '2': 'Feb',
+    '3': 'Mar',
+    '4': 'Apr',
+    '5': 'May',
+    '6': 'Jun',
+    '7': 'Jul',
+    '8': 'Aug',
+    '9': 'Sep',
+    '10': 'Oct',
+    '11': 'Nov',
+    '12': 'Dec',
+};
+ 
+const dateConfig = {
+    'year': {
+        format: 'YYYY',
+        caption: 'Year',
+        step: 1,
+    },
+    'month': {
+        format: value => monthMap[value.getMonth() + 1],
+        caption: 'Mon',
+        step: 1,
+    },
+    'date': {
+        format: 'DD',
+        caption: 'Day',
+        step: 1,
+    },
+};
+
 class ClientRegistration extends Component {
     constructor (props) {
         super(props);
@@ -62,6 +96,7 @@ class ClientRegistration extends Component {
         if(query_result.error === "none"){
             alert('Successfully added User')
             //redirect to next page
+            
         }
         else if(query_result.error === "DBFail"){
             alert('Database Error')
@@ -81,8 +116,9 @@ class ClientRegistration extends Component {
     }
     
     handleDOBInput() {
-        if(this.state.dob === null)
+        if(this.state.dob === null){
             this.setState({ dob: new Date() });
+        }
         this.setState({ isOpen: true })
     }
   
@@ -106,6 +142,7 @@ class ClientRegistration extends Component {
 					isOpen={this.state.isOpen}
 					onSelect={this.handleSelect}
                     onCancel={this.handleCancel}
+                    dateConfig={dateConfig}
                     confirmText="Done"
                     cancelText="Cancel"
                     max={new Date()}
