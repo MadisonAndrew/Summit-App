@@ -22,6 +22,9 @@ class MainMenu extends Component {
                     <Link to='/EmployeePage'>
                         <Button bsStyle="primary">Employee Page</Button>
                     </Link>
+                    <Link to='/MedicalQuestionnaire'>
+                        <Button bsStyle="primary">Medical Questionnaire</Button>
+                    </Link>
                 </ButtonToolbar>
             </div>
         )
