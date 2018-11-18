@@ -137,6 +137,8 @@ class ClientRegistration extends Component {
                     isOpen={this.state.isOpen}
                     onSelect={this.handleSelect}
                     onCancel={this.handleCancel}
+                    confirmText="Done"
+                    cancelText="Cancel"
                     theme="ios"
                 />
             </form>
