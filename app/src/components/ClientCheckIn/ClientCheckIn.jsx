@@ -41,7 +41,8 @@ class ClientCheckIn extends Component {
                 clientName: payload.name,
                 showContinueQuestion: true,
                 invalidDate: false,
-                invalidPassword: false
+                invalidPassword: false,
+                userId: payload.userId,
             });
         }
         else {
@@ -49,9 +50,6 @@ class ClientCheckIn extends Component {
                 invalidPassword: true
             });
         }
-
-
-
     }
 
     setNewClients(newClients) {
@@ -64,17 +62,14 @@ class ClientCheckIn extends Component {
         getClients(this.setNewClients);
     }
 
-  
-
     render() {
 
         return(
             <div>
                 <ClientAuthentication clients={this.state.clients} onAuthentication={this.onAuthentication}/>
-                <ContinueToAccountQuestion showQuestion={this.state.showContinueQuestion} name={this.state.clientName} test={true}/>
+                <ContinueToAccountQuestion showQuestion={this.state.showContinueQuestion} name={this.state.clientName} test={true} userId={this.state.userId}/>
                 <DateError showError={this.state.invalidDate}/>
                 <PasswordError showError={this.state.invalidPassword}/>
-
             </div>
         )
     }
