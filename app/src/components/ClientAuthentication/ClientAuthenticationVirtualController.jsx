@@ -23,8 +23,13 @@ async function authUser(payload, callback) {
             // return true upon successful call
             if(res.status === 200) {
                 payload.authenticated = true;
+
+                res.json().then(({ id }) => {
+                    payload['userId'] = id;
+                    // callback
+                    callback(payload);
+                });
             }
-            callback(payload);
         }).catch(error => {
             callback(payload);
         });
