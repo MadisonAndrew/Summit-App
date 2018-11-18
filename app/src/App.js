@@ -48,6 +48,7 @@ class App extends Component {
           <Route path='/EmployeePage' component={EmployeePage}/>
           <Route path='/AlertManagement' component={AlertManagement}/>
           <Route path='/CreateAlert' component={CreateAlert}/>
+          <Route path='/MedicalQuestionnaire' component={MedicalQuestionnaire}/>
         </Switch>
       </div>
     );
