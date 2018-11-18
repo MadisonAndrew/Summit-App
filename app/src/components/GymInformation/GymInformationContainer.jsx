@@ -22,6 +22,7 @@ class GymInformationContainer extends Component {
                 </p>
                 <h2>Pricing</h2>
                 <table border="1px" cellPadding="10px">
+                <tbody>
                     <tr>
                         <td>10 class punch card</td>
                         <td>$120</td>
@@ -67,6 +68,7 @@ class GymInformationContainer extends Component {
                             </p>
                         </td>
                     </tr>
+                </tbody>
                 </table>
             </div>
         )
